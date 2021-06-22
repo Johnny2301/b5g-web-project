@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <!-- ctrl / -->
+    <!-- <meta charset="utf-8" /> -->
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <title>Practice Web</title>
   </head>
   <body>
-    <div class="face">
-      <div class="eyes">
-        <div class="eye">
-          <div class="ball"></div>
-        </div>
+    <div class="Navigation-Bar">
+      <a href="#home" class="active">Home</a>
+      <a href="#feed">Feed</a>
+      <a href="#newsletter">News SLetter</a>
+      
 
-        <div class="eye">
-          <div class="ball"></div>
-        </div>
-      </div>
+
     </div>
 
-    <script>
-      var balls = document.getElementsByClassName('ball')
-      document.onmousemove = function () {
-        var x = (event.clientX * 100) / window.innerWidth + '%'
-        var y = (event.clientY * 100) / window.innerHeight + '%'
-        //event.clientX => get the horizontal coordinate of the mouse
-        //event.clientY => get the Vertical coordinate of the mouse
-        //window.innerWidth => get the browser width
-        //window.innerHeight => get the browser height
+    <!-- <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> -->
 
-        for (var i = 0; i < 2; i++) {
-          balls[i].style.left = x
-          balls[i].style.top = y
-          balls[i].style.transform = 'translate(-' + x + ',-' + y + ')'
-        }
-      }
-    </script>
+ 
   </body>
 </html>

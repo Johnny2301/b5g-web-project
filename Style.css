@@ -8,60 +8,32 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #5d3800;
+  background: #18283b;
 }
-.face {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: #ffcd00;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Navigation-Bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: cornflowerblue;
+  color: rgb(7, 28, 66);
 }
-.face::before {
-  content: '';
-  position: absolute;
-  top: 180px;
-  width: 150px;
-  height: 70px;
-  background: #b57700;
-  border-bottom-left-radius: 70px;
-  border-bottom-right-radius: 70px;
-  transition: 0.5s;
+.Navigation-Bar a {
+  float: left;
+  display: block;
+  color: rgb(21, 19, 161);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.face:hover::before {
-  top: 210px;
-  width: 150px;
-  height: 20px;
-  background: #b57700;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+.Navigation-Bar :hover {
+  background-color: #ddd;
+  color: black;
 }
-.eyes {
-  position: relative;
-  top: -40px;
-  display: flex;
+.Navigation-Bar a:active {
+  background-color: blueviolet;
+  color: white;
 }
-.eye {
-  width: 80px;
-  height: 80px;
-  background: #fff;
-  margin: 20px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-}
-
-.ball {
-  width: 40px;
-  height: 40px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 5px solid rgb(0, 204, 255);
+.Navigation-Bar .icon {
+  display: none;
 }
