@@ -4,28 +4,52 @@
     <!-- ctrl / -->
     <!-- <meta charset="utf-8" /> -->
     <link rel="stylesheet" href="style.css" />
-    <title>Practice Web</title>
+    <title>B5G INDUSTRIAL</title>
   </head>
   <body>
+    
+
     <div class="Navigation-Bar">
-      <a href="#home" class="active">Home</a>
-      <a href="#feed">Feed</a>
-      <a href="#newsletter">News SLetter</a>
-      
 
 
     </div>
+    <div id= "Tab" class="Logo">
+      <a href="Index.html">
+      <img src="img/Logo.png"    
+      height="70">
+    </div></a>
 
-    <!-- <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> -->
+    <div id= "mysidebar" class="sidebar">
 
- 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="" alt=""></a>
+      <h1>Menu</h1>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Products</a>
+
+
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    <script>
+      function openNav() {
+document.getElementById("mysidebar").style.width = "250px";
+document.getElementById("Tab").style.marginLeft = "250px";
+document.getElementById("main").style.marginLeft = "500px";
+}
+
+
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+document.getElementById("mysidebar").style.width = "0";
+document.getElementById("Tab").style.marginLeft = "0";
+document.getElementById("main").style.marginLeft = "0";
+}
+
+  </script>
+
   </body>
 </html>
