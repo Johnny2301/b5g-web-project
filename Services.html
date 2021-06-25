@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>B5G INDUSTRIAL</title>
+  </head>
+  <body>
+    <div class="Navigation-Bar"> </div>
+    <div id= "Tab" class="Logo">
+      <a href="Index.html">
+      <img src="img/Logo.png" height="70">
+      <div id="closebutton" class="close">
+            <a href="" class="closebtn" onclick="closeNav()"><img src="Img/Button.png" width="65"></a>
+      </div></a>
+    </div></a>
+
+
+    <div id= "mysidebar" class="sidebar">
+      <a href="Services.html">Services</a>
+      <a href="Products.html">Products</a>
+    </div>
+
+
+    <div id="main">
+      <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="Img/Button.png" width="65"></button>
+    </div>
+
+
+    <script>
+      function openNav() {
+document.getElementById("mysidebar").style.width = "250px";
+document.getElementById("Tab").style.marginLeft = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+document.getElementById("closebutton").style.marginLeft = "250px";
+}
+
+function closeNav() {
+document.getElementById("mysidebar").style.width = "0";
+document.getElementById("Tab").style.marginLeft = "0";
+document.getElementById("main").style.marginLeft = "0";
+document.getElementById("closebutton").style.marginLeft = "0";
+}
+  </script>
+
+  </body>
+</html>

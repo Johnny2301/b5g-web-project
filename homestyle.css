@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ddebfc;
+    text-decoration: none;
+  
+  } */
+
+.tophome{
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 500px;
+}
+
+
+  .homebackground{
+top: 0;
+width: 100vw;
+height: 500px;
+object-fit: cover;
+object-position: bottom;
+  }
+
+
+  .logo{
+position: absolute;
+top: 20px;
+left: 100px;
+
+  }
+
+
+.navi{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+ 
+ 
+}
+
+.navi a{
+    display: inline-block;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    font-family:monospace;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navi a:hover{
+    padding: 0px 20px;
+    color: rgb(230, 223, 253);
+    font-size: 20px;
+}
+
+.login {
+position: absolute;
+top: 37px;
+right: 40px;
+opacity: 90%;
+transition: 0.5s;
+}
+.login:hover {
+opacity: 50%;
+    }
+
+
+
+
+
+
+  /* middle home */
+
+  .middlehomebackground{
+position: absolute;
+top: 500px;
+left: 0;
+width: 100vw;
+height: 140vh;
+background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
+  }
+
+.toptext{
+    position: absolute;
+    top: 290px;
+    left: 0;
+    width: 100vw;
+    height: 500px;
+    text-align: center;
+    line-height: 50px;
+    
+    }
+
+.toptext h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    color:rgb(255, 255, 255); 
+    transition: 0.5s;
+    }
+
+.toptext h1:hover{
+    color:rgb(143, 143, 143); 
+        }
+ .toptext h2{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    color:rgb(170, 170, 170); 
+        }
+.toptext h2:hover{
+    color:rgb(255, 255, 255); 
+    }
+
+
+
+
+
+
+
+
+/* MIDTEXT */
+
+
+.midtext{
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+.midtext h1{
+position: absolute;
+top: 550px;
+width: 800px;
+height: 100px;
+font-family:monospace;
+font-size: 18px;
+font-weight: lighter;
+color: rgb(180, 180, 180);
+text-align: center;
+}
+
+
+.midtext h2{
+  position: absolute;
+  top: 680px;
+  width: 800px;
+  height: 100px;
+  font-family:monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgb(180, 180, 180);
+  text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* START */
+
+
+
+.startbutton {
+    position: absolute;
+    top: 400px;
+    width: 100vw;
+    text-align: center;
+}
+
+.start a{
+    background: rgb(126, 126, 126);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 40px;
+    font-family:monospace;
+    font-weight: lighter;
+    border-radius: 5%;
+    opacity: 100%;
+    transition: 1s;
+}
+
+.start a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(11, 0, 59);
+    border-radius: 30%;
+    opacity: 20%;
+}
+
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  top: 800px;
+  height: 400px;
+  opacity: 30%;
+  transition: 0.5s;
+  filter:blur(10px);
+  background: rgb(34, 34, 34);
+
+
+}
+
+
+
+.carousel-cell {
+  width: 66%;
+  height: 400px;
+  margin-right: 10px;
+  background: rgb(0, 0, 20);
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  object-fit: cover;
+  border-radius: 40px;
+
+}
+
+
+.carousel:hover {
+  height: 400px;
+  opacity: 50%;
+  filter:blur(0px);
+  background: none;
+
+}
+
+
+
+
+
+
+
+
+
+.photo1{
+  border-radius: 40px;
+  object-fit:cover;
+  object-position:center;
+  transition: 4s;
+}
+
+.photo1:hover{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+
+.photo2{
+  border-radius: 40px;
+  object-fit:none;
+  object-position:30px 30%;
+  transition: 4s;
+}
+
+.photo2:hover{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  }
+
+
+  .photo3{
+    border-radius: 40px;
+    object-fit:cover;
+    object-position:center;
+    transition: 4s;
+  }
+  
+  .photo3:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+
+
+  .photo4{
+    border-radius: 40px;
+    object-fit:cover;
+    object-position:center;
+    transition: 4s;
+  }
+  
+  .photo4:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+
+
+
+
+.movingback{
+position: absolute;
+top:800px;
+opacity: 5%;
+width: 100vw;
+height: 200px;
+}
+
+.backgif{
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+  object-fit:cover;
+  object-position: bottom;
+  filter: blur(10px);
+}

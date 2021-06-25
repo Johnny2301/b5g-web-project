@@ -8,32 +8,134 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #18283b;
-}
-.Navigation-Bar {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  background-color: cornflowerblue;
-  color: rgb(7, 28, 66);
-}
-.Navigation-Bar a {
-  float: left;
-  display: block;
-  color: rgb(21, 19, 161);
-  text-align: center;
-  padding: 14px 16px;
+  background: #ddebfc;
   text-decoration: none;
-  font-size: 17px;
+
 }
-.Navigation-Bar :hover {
-  background-color: #ddd;
-  color: black;
+
+
+.Navigation-Bar {
+  position:absolute;
+  top:0;
+  width: 100vw;
+  height: 70px;
+  /* background-color: rgb(6, 32, 82); */
+  background-image: linear-gradient(rgb(0, 33, 63), rgb(206, 236, 255));
+
 }
-.Navigation-Bar a:active {
-  background-color: blueviolet;
-  color: white;
+
+
+.Logo
+{
+  position:absolute;
+  left: 50px;
+  top: 0;
+  transition: 0.5s;
 }
-.Navigation-Bar .icon {
-  display: none;
+
+
+.product-d{
+  height: 70px;
+  width: 100vw;
+  background: rgb(0, 40, 77);
+  position: fixed;
+  top: 100px;
+
 }
+
+.product-title{
+  color: rgb(121, 192, 255);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 20px;
+  position: absolute;
+  top: 110px;
+  left: 80px;
+  transition: 0.5s;
+
+}
+
+.product-title:hover{
+  color: rgb(255, 255, 255);
+  border-radius: 100%;
+  background-color: brown;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0px; 
+  position: fixed; 
+  z-index:3 ;
+  top: 0;
+  left: 0;
+  background-color: rgb(1, 29, 56);
+  overflow-x: hidden; 
+  padding-top: 0px;
+  border-right: 1px solid #000;
+  transition: 0.5s;
+}
+
+  .sidebar a{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 69px;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    }
+
+    .sidebar a:hover{
+
+      color: rgb(0, 0, 0);
+      background-image: repeating-linear-gradient(rgb(255, 255, 255), rgb(158, 149, 255)) ;
+      background-color: rgb(170, 161, 243);
+      transition: 0.5s;
+      transform-style: preserve-3d;
+      border-radius: 25%;
+      margin: 2%
+     
+      
+    }
+
+.sidebar h1{
+ 
+  font-size: 60px;
+  color: #ddebfc;
+  text-align: center;
+ 
+  background-color: rgb(0, 0, 0);
+  top: 0;
+}
+
+
+
+
+
+.openbtn {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  transition: 0.3s;
+}
+
+.openbtn:hover {
+  margin-left: 2px;
+}
+
+.close{
+  position: fixed;
+  top: 0%;
+  left: 0;
+  transition: 0.5s;
+  }
+  
+  .closebtn:hover{
+    margin-left: 2px;
+  
+    }
+
+
