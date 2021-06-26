@@ -409,10 +409,22 @@ border: 1.5px solid white;
 
 
 
+    .sidebar {
+      position: absolute;
+      z-index: -3;
+    }
 
 
-
-
+    .openbtn {
+      position: absolute;
+      z-index: -3;
+    }
+    
+    
+    .close{
+      position: absolute;
+      z-index: -3;
+      }
 
 
 
