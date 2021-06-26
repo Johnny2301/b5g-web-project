@@ -20,14 +20,14 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100vw;
-height: 500px;
+height: 90%;
 }
 
 
   .homebackground{
 top: 0;
 width: 100vw;
-height: 500px;
+height: 100%;
 object-fit: cover;
 object-position: bottom;
   }
@@ -39,6 +39,11 @@ top: 20px;
 left: 100px;
 
   }
+
+  .b5glogo{
+width: 10%;
+    
+      }
 
 
 .navi{
@@ -86,7 +91,7 @@ opacity: 50%;
 
   .middlehomebackground{
 position: absolute;
-top: 500px;
+top: 90%;
 left: 0;
 width: 100vw;
 height: 140vh;
@@ -95,17 +100,17 @@ background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
 
 .toptext{
     position: absolute;
-    top: 290px;
+    top: 55%;
     left: 0;
     width: 100vw;
-    height: 500px;
+    height: 70%;
     text-align: center;
     line-height: 50px;
     
     }
 
 .toptext h1{
-    font-size: 50px;
+    font-size: 180%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
     color:rgb(255, 255, 255); 
@@ -116,7 +121,7 @@ background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
     color:rgb(143, 143, 143); 
         }
  .toptext h2{
-    font-size: 30px;
+  font-size: 130%;
     font-family: 'Courier New', Courier, monospace;
     font-style: oblique;
     color:rgb(170, 170, 170); 
@@ -124,11 +129,6 @@ background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
 .toptext h2:hover{
     color:rgb(255, 255, 255); 
     }
-
-
-
-
-
 
 
 
@@ -251,13 +251,6 @@ body { font-family: sans-serif; }
 }
 
 
-
-
-
-
-
-
-
 .photo1{
   border-radius: 40px;
   object-fit:cover;
@@ -276,7 +269,7 @@ body { font-family: sans-serif; }
 .photo2{
   border-radius: 40px;
   object-fit:none;
-  object-position:30px 30%;
+  object-position:1px 30%;
   transition: 4s;
 }
 
@@ -318,8 +311,6 @@ body { font-family: sans-serif; }
   }
 
 
-
-
 .movingback{
 position: absolute;
 top:800px;
@@ -336,3 +327,474 @@ height: 200px;
   object-position: bottom;
   filter: blur(10px);
 }
+
+
+
+
+/* footer */
+
+.footer{
+
+position: absolute;
+top: 1310px;
+width: 100w;
+height: 50px;
+background-image: linear-gradient(65deg, black, rgb(7, 0, 24),black);
+border: 1.5px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg{
+  position: absolute;
+  z-index: -3;
+  width: 0%;
+}
+
+
+.b5glogom {
+  position: absolute;
+  z-index: -3;
+  width: 0%;
+}
+
+
+
+
+.carouselm {
+  position: absolute;
+  z-index: -3;
+  width: 0px;
+}
+
+
+
+.carousel-cellm {
+  position: absolute;
+  z-index: -3;
+
+}
+
+
+
+
+
+.toptextm{
+  position: absolute;
+  z-index: -3;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+
+
+@media(max-width:720px){
+
+
+.tophome{
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 90%;
+display: none;
+}
+
+  .logo{
+    display: none;
+position: absolute;
+top: 20px;
+left: 100px;
+  }
+    
+.navi{
+  display: none;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+ 
+ 
+}
+
+.login {
+  display: none;
+position: absolute;
+top: 37px;
+right: 40px;
+opacity: 90%;
+transition: 0.5s;
+}
+
+
+  /* middle home */
+
+  .middlehomebackground{
+    display: none;
+position: absolute;
+top: 90%;
+left: 0;
+width: 100vw;
+height: 140vh;
+background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
+  }
+
+.toptext{
+  display:none;
+  justify-content:center;
+  align-items: center;
+  line-height: 150%;
+  top: 2%;
+  width: 100vw;
+    
+    }
+
+
+/* MIDTEXT */
+
+
+.midtext{
+display: flex;
+justify-content:center;
+align-items: center;
+display: none;
+
+/* START */
+
+}
+
+
+.carousel{
+  display: none;
+  top: 800px;
+  height: 400px;
+  opacity: 30%;
+  transition: 0.5s;
+  filter:blur(10px);
+  background: rgb(34, 34, 34);
+}
+.movingback{
+  display: none;
+
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    background:rgb(2, 0, 24);
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    
+  
+  }
+
+
+
+
+.bg{
+  display: flex;
+  position: absolute;
+  background: radial-gradient(rgb(0, 2, 34), rgb(0, 0, 0));
+  width: 100vw;
+  height: 100%;
+}
+
+
+.b5glogom {
+
+  position:absolute ;
+  top: 3%;
+  left:5%;
+  size: ;
+  width:25%;
+}
+
+
+
+
+
+
+
+
+.carouselm {
+  position: absolute;
+  top: 400px;
+  height: 40vh;
+  width: 100vw;
+  opacity: 10%;
+  transition: 1s;
+  filter: grayscale(100%);
+}
+
+.carouselm:active {
+
+  opacity: 50%;
+  filter: grayscale(20%);
+}
+
+.carousel-cellm {
+
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+=
+  counter-increment: gallery-cell;
+  object-fit: cover;
+  filter:blur(10px);
+  transition: 0.5s;
+
+}
+
+
+.carousel-cellm:active {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+=
+  border-radius: 100%;
+  counter-increment: gallery-cell;
+  object-fit: cover;
+  border-radius: 40px;
+  filter:blur(0px);
+
+}
+
+
+
+
+
+.photo1m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+.photo1m:active{
+  border-radius: 20%;
+}
+
+.photo2m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+.photo2m:active{
+  border-radius: 20%;
+}
+
+.photo3m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+.photo3m:active{
+  border-radius: 20%;
+}
+
+.photo4m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+.photo4m:active{
+  border-radius: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.toptextm{
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  width: 100vw;
+    
+    }
+  
+    .toptextm h1{
+      justify-content:center;
+      align-items: center;
+      font-size: 150%;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(90deg, blue, white, rgb(255, 255, 255), blue);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      filter: blur(3px);
+        }
+
+ .toptextm2{
+     justify-content:center;
+     align-items: center;
+     position: absolute;
+     top: 200px;
+     width: 100vw;
+            
+            }
+          
+  .toptextm2 h1{
+       justify-content:center;
+       align-items: center;
+       font-size: 150%;
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       color: azure;  
+              
+                }
+
+
+
+
+
+
+
+
+
+
+
+                .sidebar {
+                  height: 100%;
+                  width: 0px; 
+                  position: fixed; 
+                  z-index:1 ;
+                  top: 0;
+                  right: 0;
+                  background:radial-gradient( rgb(13, 0, 73), rgb(0, 0, 0));
+                  overflow-x: hidden; 
+                  padding-top: 0px;
+                  border-right: 1px solid #000;
+                  transition: 1s;
+                }
+                
+
+.sb{
+  margin-top: 30%;
+}
+
+
+
+ .sb a{
+margin: 2%;                  
+ font-size: 30px;
+ font-family:monospace;
+  line-height: 69px;
+  display: block;
+ color: rgb(255, 255, 255);
+  text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid black;
+     text-decoration: none;
+                    }
+                
+                
+                .sidebar h1{
+                 
+                  font-size: 60px;
+                  color: #ddebfc;
+                  text-align: center;
+                  
+                  background-color: rgb(0, 0, 0);
+                  top: 0;
+                }
+
+
+
+                .openbtn {
+                  width: 30%;
+                  position: absolute;
+                  right: 10%;
+                  top: 4%;
+                  transition: 0.3s;
+                }
+                
+                
+                .close{
+                  width: 30%;
+                  position: absolute;
+                  right: 10%;
+                  top: 4%;
+                  transition: 0.3s;
+                  }
+                  

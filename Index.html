@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="homestyle.css" />
     <title>B5G INDUSTRIAL</title>
@@ -15,7 +16,7 @@
 
 
 <div class="logo">
-  <a href="index.html"><img src="/img/logo.png" width="100"></a>
+  <a href="index.html"><img class="b5glogo" src="/img/logo.png"></a>
 </div>
 
 
@@ -41,12 +42,12 @@
 </div>
 </div>
 
-
+<!-- 
 <div class="startbutton">
   <div class="start">
 <a href="start.html">START</a>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -63,13 +64,11 @@
 
 
 <!-- Flickity HTML init -->
-<div class="color back">
 <div class="carousel" data-flickity='{ "autoPlay": true }'>
   <div class="carousel-cell"><img class="photo1" src="image/image1.png" height="100%" width="100%"></div>
   <div class="carousel-cell"><img class="photo2" src="image/image2.jpg" height="100%" width="100%"></div>
   <div class="carousel-cell"><img class="photo3" src="image/image3.jpg" height="100%" width="100%"></div>
   <div class="carousel-cell"><img class="photo4" src="image/image4.png" height="100%" width="100%"></div>
-</div>
 </div>
 
 
@@ -84,11 +83,124 @@ B5G Industrial Supplies and Services, also known as B5G, is composed of a pool o
 <h2>The company's forte does not only limit to piping system but also in mechanical works that our most valuable clients would like to synergize with us for a cost-driven, effective and efficient solutions that B5G can offer. </h2>
 
     </div>
+<div>
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- mobile -->
+
+
+
+
+
+<div class="bg">
+</div>
+
+
+`
+<div class="logom">
+<img class="b5glogom" src="/img/logo.png">
+</div>
+
+
+
+
+
+
+
+<div class="carouselm" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cellm"><img class="photo1m" src="image/image1.png" height="100%" width="100%"></div>
+  <div class="carousel-cellm"><img class="photo2m" src="image/image2.jpg" height="100%" width="100%"></div>
+  <div class="carousel-cellm"><img class="photo3m" src="image/image3.jpg" height="100%" width="100%"></div>
+  <div class="carousel-cellm"><img class="photo4m" src="image/image4.png" height="100%" width="100%"></div>
+</div>
+
+
+
+
+    <div class="toptextm"><h1><div class="welcoming">
+      <h1>B5G INDUSTRIAL SUPPLIES AND SERVICES</h1>
+    </div>
+    </div>
+
+
+
+    <div class="toptextm2"><h1><div class="welcoming">
+      <h1>B5G INDUSTRIAL SUPPLIES AND SERVICES</h1>
+    </div>
+    </div>
+
+
+
+
+<div id= "mysidebar" class="sidebar">
+
+<div class="sb">
+  <a href="Services.html">LogIn</a>
+  <a href="Products.html">Inquiries</a>
+  <a href="Products.html">Learn More</a>
+</div>
+
+<div id="clsbtn" class="close">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="Img/Button.png" width="60%"></a>
+</div></a>
+
+</div>
+
+
+    <div id="main" class="openbutton">
+      <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="Img/Button.png" width="60%"></button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+
+    <script>
+      function openNav() {
+document.getElementById("mysidebar").style.width = "100vw";
+document.getElementById("main").style.marginLeft = "250px";
+document.getElementById("clsbtn").style.marginLeft = "250px";
+}
+
+function closeNav() {
+document.getElementById("mysidebar").style.width = "0vw";
+document.getElementById("main").style.marginLeft = "0";
+document.getElementById("clsbtn").style.marginLeft = "0";
+}
+  </script>
   </body>
 </html>

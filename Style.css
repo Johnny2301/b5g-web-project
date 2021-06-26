@@ -116,7 +116,8 @@ font-size: 20px;
 
 
 .openbtn {
-  position: fixed;
+  width: 30%;
+  position: absolute;
   left: 0px;
   top: 0;
   transition: 0.3s;
