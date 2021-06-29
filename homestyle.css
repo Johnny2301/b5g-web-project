@@ -4,6 +4,17 @@
     box-sizing: border-box;
   }
 
+  #loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff
+    url('preloader/preloader.gif')
+     no-repeat center center;	
+    z-index: 99999;
+  }
+
+
 /* 
 body {
     display: flex;
@@ -19,14 +30,14 @@ body {
 position: absolute;
 top: 0;
 left: 0;
-width: 100vw;
+width: 100%;
 height: 90%;
 }
 
 
   .homebackground{
 top: 0;
-width: 100vw;
+width: 100%;
 height: 100%;
 object-fit: cover;
 object-position: bottom;
@@ -83,26 +94,22 @@ opacity: 50%;
     }
 
 
-
-
-
-
-  /* middle home */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
   .middlehomebackground{
 position: absolute;
-top: 90%;
+top: 88%;
 left: 0;
-width: 100vw;
+width: 100%;
 height: 140vh;
-background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
+background-image:linear-gradient(rgb(0, 0, 0), rgb(4, 0, 20))
   }
 
 .toptext{
     position: absolute;
     top: 55%;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 70%;
     text-align: center;
     line-height: 50px;
@@ -131,19 +138,18 @@ background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
     }
 
 
-
-/* MIDTEXT */
-
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .midtext{
 display: flex;
 justify-content:center;
 align-items: center;
+width: 100%;
 }
 
 .midtext h1{
 position: absolute;
-top: 550px;
+top: 100%;
 width: 800px;
 height: 100px;
 font-family:monospace;
@@ -153,10 +159,9 @@ color: rgb(180, 180, 180);
 text-align: center;
 }
 
-
 .midtext h2{
   position: absolute;
-  top: 680px;
+  top: 120%;
   width: 800px;
   height: 100px;
   font-family:monospace;
@@ -166,90 +171,35 @@ text-align: center;
   text-align: center;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-/* START */
-
-
-
-.startbutton {
-    position: absolute;
-    top: 400px;
-    width: 100vw;
-    text-align: center;
-}
-
-.start a{
-    background: rgb(126, 126, 126);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 40px;
-    font-family:monospace;
-    font-weight: lighter;
-    border-radius: 5%;
-    opacity: 100%;
-    transition: 1s;
-}
-
-.start a:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(11, 0, 59);
-    border-radius: 30%;
-    opacity: 20%;
-}
-
-
-
-/* external css: flickity.css */
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
 .carousel {
-  top: 800px;
-  height: 400px;
+  position: absolute;
+  width: 100%;
+  top: 140%;
+  height: 70vh;
   opacity: 30%;
   transition: 0.5s;
-  filter:blur(10px);
-  background: rgb(34, 34, 34);
-
-
 }
 
-
+.carousel:hover {
+  opacity: 80%;
+}
 
 .carousel-cell {
-  width: 66%;
-  height: 400px;
+  width: 62%;
+  height: 100%;
   margin-right: 10px;
   background: rgb(0, 0, 20);
   border-radius: 5px;
   counter-increment: gallery-cell;
   object-fit: cover;
-  border-radius: 40px;
+  filter:blur(10px);
 
 }
 
-
-.carousel:hover {
-  height: 400px;
-  opacity: 50%;
+.carousel-cell:hover {
   filter:blur(0px);
-  background: none;
 
 }
-
 
 .photo1{
   border-radius: 40px;
@@ -313,15 +263,15 @@ body { font-family: sans-serif; }
 
 .movingback{
 position: absolute;
-top:800px;
+top:120%;
 opacity: 5%;
-width: 100vw;
+width: 100%;
 height: 200px;
 }
 
 .backgif{
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   object-fit:cover;
   object-position: bottom;
@@ -329,18 +279,28 @@ height: 200px;
 }
 
 
-
-
-/* footer */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .footer{
 
 position: absolute;
-top: 1310px;
-width: 100w;
-height: 50px;
-background-image: linear-gradient(65deg, black, rgb(7, 0, 24),black);
-border: 1.5px solid white;
+top: 225%;
+width: 100%;
+height: 20px;
+background: rgb(134, 134, 134);
+border-top: 1.5px solid rgb(37, 37, 37);
+text-align: center;
+}
+
+.footer h1{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: beige;
+  font-size: 80%;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 
@@ -349,35 +309,19 @@ border: 1.5px solid white;
 
 
 
-
-
-
-/* mobile */
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .bg{
   position: absolute;
   z-index: -3;
-  width: 0%;
+  width: 0vw;
 }
 
 
 .b5glogom {
   position: absolute;
   z-index: -3;
-  width: 0%;
+  width: 0vw;
 }
 
 
@@ -386,7 +330,7 @@ border: 1.5px solid white;
 .carouselm {
   position: absolute;
   z-index: -3;
-  width: 0px;
+  width: 0vw;
 }
 
 
@@ -394,7 +338,7 @@ border: 1.5px solid white;
 .carousel-cellm {
   position: absolute;
   z-index: -3;
-
+  width: 0vw;
 }
 
 
@@ -404,27 +348,39 @@ border: 1.5px solid white;
 .toptextm{
   position: absolute;
   z-index: -3;
+  width: 0vw;
     }
 
 
 
 
-    .sidebar {
-      position: absolute;
-      z-index: -3;
-    }
+.sidebar {
+   position: absolute;
+  z-index: -3;
+   width: 0vw;
+   }
 
 
-    .openbtn {
-      position: absolute;
-      z-index: -3;
-    }
+.openbtn {
+   position: absolute;
+   z-index: -3;
+    width: 0vw;
+   }
+   
     
-    
-    .close{
-      position: absolute;
-      z-index: -3;
-      }
+.close{
+   position: absolute;
+   z-index: -3;
+   width: 0vw;
+     }
+
+
+
+.lower-footer{
+  position: absolute;
+  z-index: -3;
+  width: 0vw;
+}
 
 
 
@@ -447,11 +403,7 @@ border: 1.5px solid white;
 
 
 
-
-
-
-
-
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* mobile */
 
@@ -460,101 +412,40 @@ border: 1.5px solid white;
 
 
 .tophome{
-position: absolute;
-top: 0;
-left: 0;
-width: 100vw;
-height: 90%;
 display: none;
 }
-
   .logo{
     display: none;
-position: absolute;
-top: 20px;
-left: 100px;
-  }
-    
+  } 
 .navi{
   display: none;
-    position: absolute;
-    top: 50px;
-    right: 200px;
- 
- 
 }
-
 .login {
   display: none;
-position: absolute;
-top: 37px;
-right: 40px;
-opacity: 90%;
-transition: 0.5s;
 }
-
-
-  /* middle home */
-
   .middlehomebackground{
     display: none;
-position: absolute;
-top: 90%;
-left: 0;
-width: 100vw;
-height: 140vh;
-background-image:linear-gradient(rgb(0, 0, 0), rgb(8, 0, 39))
   }
-
 .toptext{
-  display:none;
-  justify-content:center;
-  align-items: center;
-  line-height: 150%;
-  top: 2%;
-  width: 100vw;
-    
+  display: none;
     }
-
-
-/* MIDTEXT */
-
-
 .midtext{
-display: flex;
-justify-content:center;
-align-items: center;
-display: none;
-
-/* START */
-
+  display: none;
 }
-
-
 .carousel{
   display: none;
-  top: 800px;
-  height: 400px;
-  opacity: 30%;
-  transition: 0.5s;
-  filter:blur(10px);
-  background: rgb(34, 34, 34);
 }
 .movingback{
   display: none;
 
   }
-  
-  
+.footer{
+  display: none;
+}
 
 
 
-
-
-
-
-
-
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
   * {
     margin: 0;
@@ -564,23 +455,23 @@ display: none;
 
 
 body {
-    background:rgb(2, 0, 24);
     text-decoration: none;
     align-items: center;
     text-align: center;
     
-  
   }
 
 
 
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .bg{
   display: flex;
   position: absolute;
-  background: radial-gradient(rgb(0, 2, 34), rgb(0, 0, 0));
+  background: radial-gradient(rgb(0, 1, 15), rgb(0, 0, 0));
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 }
 
 
@@ -588,120 +479,86 @@ body {
 
   position:absolute ;
   top: 3%;
-  left:5%;
-  size: ;
-  width:25%;
+  left:8%;
+  width:15%;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sidebar {
+  height: 100vh;
+  width: 0px; 
+   position: fixed; 
+   z-index:1 ;
+   top: 0;
+   right: 0;
+   background:radial-gradient( rgb(4, 0, 15), rgb(0, 0, 0));
+   overflow-x: hidden; 
+   padding-top: 0px;
+   border-right: 1px solid #000;
+   transition: 0.5s;
+              }
+              
+
+.sb{
+margin-top: 25%;
 }
 
 
 
+.sb a{
+margin: 2%;                  
+font-size: 20px;
+font-family:monospace;
+line-height: 50px;
+display: block;
+color: rgb(255, 255, 255);
+text-align: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid black;
+   text-decoration: none;
+                  }
+              
+              
+              .sidebar h1{
+               
+                font-size: 60px;
+                color: #ddebfc;
+                text-align: center;
+                
+                background-color: rgb(0, 0, 0);
+                top: 0;
+              }
 
 
 
+              .openbtn {
+                width: 20%;
+                position: absolute;
+                right: 6%;
+                top: 3%;
+                transition: 0.3s;
+              }
+              
+              
+              .close{
+                width: 20%;
+                position: absolute;
+                right: 6%;
+                top: 3%;
+                transition: 0.3s;
+                }
+                
 
-
-.carouselm {
-  position: absolute;
-  top: 400px;
-  height: 40vh;
-  width: 100vw;
-  opacity: 10%;
-  transition: 1s;
-  filter: grayscale(100%);
-}
-
-.carouselm:active {
-
-  opacity: 50%;
-  filter: grayscale(20%);
-}
-
-.carousel-cellm {
-
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-=
-  counter-increment: gallery-cell;
-  object-fit: cover;
-  filter:blur(10px);
-  transition: 0.5s;
-
-}
-
-
-.carousel-cellm:active {
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-=
-  border-radius: 100%;
-  counter-increment: gallery-cell;
-  object-fit: cover;
-  border-radius: 40px;
-  filter:blur(0px);
-
-}
-
-
-
-
-
-.photo1m{
-  object-fit:cover;
-  object-position:center;
-  transition: 1s;
-}
-
-.photo1m:active{
-  border-radius: 20%;
-}
-
-.photo2m{
-  object-fit:cover;
-  object-position:center;
-  transition: 1s;
-}
-
-.photo2m:active{
-  border-radius: 20%;
-}
-
-.photo3m{
-  object-fit:cover;
-  object-position:center;
-  transition: 1s;
-}
-
-.photo3m:active{
-  border-radius: 20%;
-}
-
-.photo4m{
-  object-fit:cover;
-  object-position:center;
-  transition: 1s;
-}
-
-.photo4m:active{
-  border-radius: 20%;
-}
-
-
-
-
-
-
-
-
-
-
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .toptextm{
   justify-content:center;
   align-items: center;
   position: absolute;
-  top: 200px;
+  top: 130px;
   width: 100vw;
     
     }
@@ -711,17 +568,17 @@ body {
       align-items: center;
       font-size: 150%;
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background: linear-gradient(90deg, blue, white, rgb(255, 255, 255), blue);
+      background: linear-gradient(40deg, rgb(0, 195, 255), rgb(0, 217, 255),rgb(0, 219, 248));
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      filter: blur(3px);
+      filter: blur(5px);
         }
 
  .toptextm2{
      justify-content:center;
      align-items: center;
      position: absolute;
-     top: 200px;
+     top: 130px;
      width: 100vw;
             
             }
@@ -734,79 +591,76 @@ body {
        color: azure;  
               
                 }
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 
-
-
-
-
-
-
-
-
-                .sidebar {
-                  height: 100%;
-                  width: 0px; 
-                  position: fixed; 
-                  z-index:1 ;
-                  top: 0;
-                  right: 0;
-                  background:radial-gradient( rgb(13, 0, 73), rgb(0, 0, 0));
-                  overflow-x: hidden; 
-                  padding-top: 0px;
-                  border-right: 1px solid #000;
-                  transition: 1s;
-                }
-                
-
-.sb{
-  margin-top: 30%;
+.carouselm {
+  position: absolute;
+  top: 50%;
+  height: 40%;
+  width: 100vw;
+  opacity: 50%;
+  transition: 1s;
+  filter: grayscale(80%);
 }
 
 
+.carousel-cellm {
 
- .sb a{
-margin: 2%;                  
- font-size: 30px;
- font-family:monospace;
-  line-height: 69px;
-  display: block;
- color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+=
+  counter-increment: gallery-cell;
+  object-fit: cover;
+  filter:blur(1px);
+  transition: 0.5s;
+
+}
+
+
+.photo1m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+
+.photo2m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+
+.photo3m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+
+.photo4m{
+  object-fit:cover;
+  object-position:center;
+  transition: 1s;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.lower-footer{
+  position: absolute;
+  bottom:0;
+  background: rgb(54, 54, 54);
+  border-top:2px solid rgb(0, 0, 0) ;
+  width: 100%;
+  height: 25px;
+}
+
+.lower-footer h1{
+  color: rgb(156, 156, 156);
   text-align: center;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(255, 255, 255, 1);
-    border-bottom: 1px solid black;
-     text-decoration: none;
-                    }
-                
-                
-                .sidebar h1{
-                 
-                  font-size: 60px;
-                  color: #ddebfc;
-                  text-align: center;
-                  
-                  background-color: rgb(0, 0, 0);
-                  top: 0;
-                }
-
-
-
-                .openbtn {
-                  width: 30%;
-                  position: absolute;
-                  right: 10%;
-                  top: 4%;
-                  transition: 0.3s;
-                }
-                
-                
-                .close{
-                  width: 30%;
-                  position: absolute;
-                  right: 10%;
-                  top: 4%;
-                  transition: 0.3s;
-                  }
-                  
+  font-size: 100%;
+}
