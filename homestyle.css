@@ -600,9 +600,9 @@ text-align: center;
   top: 50%;
   height: 40%;
   width: 100vw;
-  opacity: 50%;
+  opacity: 100%;
   transition: 1s;
-  filter: grayscale(80%);
+  filter: grayscale(0%);
 }
 
 

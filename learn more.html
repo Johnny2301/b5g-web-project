@@ -1,45 +1,154 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>B5G INDUSTRIAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="learn more-style.css" />
+    <title>B5G Learn More</title>
   </head>
-  <body>
-    <div class="Navigation-Bar"> </div>
-    <div id= "Tab" class="Logo">
-      <a href="Index.html">
-      <img src="img/Logo.png" height="70">
-      <div id="closebutton" class="close">
-            <a href="" class="closebtn" onclick="closeNav()"><img src="Img/Button.png" width="65"></a>
-      </div></a>
-    </div></a>
+  <body onload="myFunction()">
+    <div id="loading"></div>
+
+<div class="about-background"></div>
+
+<ul class="nav">
+
+  <li id="menu-open"><a href="javascript:void(1)" class="omobtn" onclick="openNav()">Menu
+  </a></li>
+  <li id="ovo"><a href="javascript:void(0)" class="omobtn" onclick="closeNav()">Our Vision
+  </a></li>
+  <li id="omo"><a href="javascript:void(0)" class="omobtn" onclick="openNav()">Our Mission
+  </a></li>
+  <li id="omo"><a href="javascript:void(0)" ><a href="learn more.html">About B5G
+  </a></a></li>
+</ul>
 
 
-    <div id= "mysidebar" class="sidebar">
-      <a href="Services.html">Services</a>
-      <a href="Products.html">Products</a>
-    </div>
+<div id= "our-mission" class="omotab">
+  <div class="omtab">
+    <a href="inquiries.html">Inquiries</a>
+    <a href="learn more.html">Learn More</a>
+  </div> -->
+
+  <div id= "our-vision" class="ovotab">
+    <div class="ovtab">
+      <a href="inquiries.html">Inquiries</a>
+    </div> -->
+  
 
 
-    <div id="main">
-      <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="Img/Button.png" width="65"></button>
-    </div>
+
+
+
+<!-- <div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cell"><img class="photo1" src="image/image1.png" height="100%" width="100%"></div>
+  <div class="carousel-cell"><img class="photo2" src="image/image2.jpg" height="100%" width="100%"></div>
+  <div class="carousel-cell"><img class="photo3" src="image/image3.jpg" height="100%" width="100%"></div>
+  <div class="carousel-cell"><img class="photo4" src="image/image4.png" height="100%" width="100%"></div>
+</div>
+ -->
+
+<!-- <div class="footer">
+  <h1>Copyright © 2020 - B5G Industrial Supplies and Services</h1></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- /* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */ -->
+
+
+<!-- mobile -->
+
+<!-- <div class="carouselm" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cellm"><img class="photo1m" src="image/image1.png" height="100%" width="100%"></div>
+  <div class="carousel-cellm"><img class="photo2m" src="image/image2.jpg" height="100%" width="100%"></div>
+  <div class="carousel-cellm"><img class="photo3m" src="image/image3.jpg" height="100%" width="100%"></div>
+  <div class="carousel-cellm"><img class="photo4m" src="image/image4.png" height="100%" width="100%"></div>
+</div>
+
+
+<div id= "mysidebar" class="sidebar">
+<div class="sb">
+  <a href="#">LogIn</a>
+  <a href="inquiries.html">Inquiries</a>
+  <a href="learn more.html">Learn More</a>
+</div> -->
+
+
+
+
+
+
+<div id="clsbtn" class="close">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/button.png" width="60%"></a>
+</a></div>
+
+</div>
+
+
+
+    <div id="main" class="openbutton">
+      <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><img src="img/button.png" width="60%"></button>
+    </a>></div>
+
+    <!-- <div class="lower-footer">
+      <h1>Copyright © 2020</h1>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- /* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */ -->
+
+    <script>
+      // $(document).ready(function(){
+        // 	$('div#loading').removeAttr('id');
+      // });
+      var preloader = document.getElementById("loading");
+      // window.addEventListener('load', function(){
+      // 	preloader.style.display = 'none';
+      // 	})
+  
+      function myFunction(){
+        preloader.style.display = 'none';
+      };
+    </script>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
     <script>
       function openNav() {
-document.getElementById("mysidebar").style.width = "250px";
-document.getElementById("Tab").style.marginLeft = "250px";
-document.getElementById("main").style.marginLeft = "250px";
-document.getElementById("closebutton").style.marginLeft = "250px";
+document.getElementById("our-mission").style.marginRight = "0vw";
+document.getElementById("clsbtn").style.marginLeft = "250px";
+document.getElementById("our-vision").style.marginRight = "100vw";
 }
 
 function closeNav() {
-document.getElementById("mysidebar").style.width = "0";
-document.getElementById("Tab").style.marginLeft = "0";
+  document.getElementById("our-vision").style.marginRight = "0vw";
+  document.getElementById("our-mission").style.marginRight = "100vw";
+document.getElementById("mysidebar").style.width = "0vw";
 document.getElementById("main").style.marginLeft = "0";
-document.getElementById("closebutton").style.marginLeft = "0";
+document.getElementById("clsbtn").style.marginLeft = "0";
 }
+
+
   </script>
 
   </body>
